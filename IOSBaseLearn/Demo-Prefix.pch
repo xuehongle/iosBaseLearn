@@ -1,0 +1,35 @@
+//
+//  Demo-Prefix.pch
+//  IOSBaseLearn
+//
+//  Created by 薛乐 on 2017/12/31.
+//  Copyright © 2017年 xue. All rights reserved.
+//
+
+#ifndef Demo_Prefix_pch
+#define Demo_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+/******************************Masonry start******************************/
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+/******************************Masonry end******************************/
+/******************************NSLog start******************************/
+//通过DEBUG宏的定义来解决Debug状态下和Release状态下的输出
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+/******************************NSLog end******************************/
+
+#endif /* Demo_Prefix_pch */

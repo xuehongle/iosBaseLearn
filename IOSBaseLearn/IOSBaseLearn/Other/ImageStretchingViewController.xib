@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageStretchingViewController">
+            <connections>
+                <outlet property="btn" destination="6aZ-gO-Aae" id="Dbl-eW-RD2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedButton" translatesAutoresizingMaskIntoConstraints="NO" id="gSn-f9-0Tq">
+                    <rect key="frame" x="15" y="106" width="61" height="34"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF9-3b-yPX">
+                    <rect key="frame" x="15" y="70" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedButton" translatesAutoresizingMaskIntoConstraints="NO" id="aky-OG-xJu">
+                    <rect key="frame" x="15" y="191" width="330" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="70d-PF-zke"/>
+                        <constraint firstAttribute="height" constant="57" id="I4E-Is-Whm"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拉长后" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQH-EC-6Cn">
+                    <rect key="frame" x="15" y="155" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageView可通过xib属性拉伸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkR-Kc-pBc">
+                    <rect key="frame" x="15" y="263" width="227" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedButton" translatesAutoresizingMaskIntoConstraints="NO" id="3RQ-wA-zMW">
+                    <rect key="frame" x="15" y="299" width="330" height="57"/>
+                    <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="Zj3-qm-gIu"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="eFh-ys-qVg"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="uyE-xl-zSZ"/>
+                        <constraint firstAttribute="width" constant="330" id="xX0-av-n80"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-gO-Aae">
+                    <rect key="frame" x="15" y="407" width="330" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="06h-rb-rhs"/>
+                        <constraint firstAttribute="width" constant="330" id="BtO-jv-keB"/>
+                    </constraints>
+                    <state key="normal" title="Button" backgroundImage="RedButton"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button需通过代码拉伸背景" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew8-kv-7LD">
+                    <rect key="frame" x="15" y="371" width="207" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="iOS中有个叫端盖(end cap)的概念，用来指定图片中的哪一部分不用拉伸。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oba-Pv-chl">
+                    <rect key="frame" x="15" y="479" width="345" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="j4d-vM-GVc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stretch" translatesAutoresizingMaskIntoConstraints="NO" id="i0E-WN-v3f">
+                    <rect key="frame" x="15" y="550" width="200" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="bn6-mh-lOW"/>
+                        <constraint firstAttribute="height" constant="80" id="mac-fR-Wwz"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3RQ-wA-zMW" firstAttribute="top" secondItem="fkR-Kc-pBc" secondAttribute="bottom" constant="15" id="04j-H6-f7v"/>
+                <constraint firstItem="fkR-Kc-pBc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="DUc-e6-E5j"/>
+                <constraint firstItem="gSn-f9-0Tq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="FmF-zy-UQZ"/>
+                <constraint firstItem="6aZ-gO-Aae" firstAttribute="top" secondItem="ew8-kv-7LD" secondAttribute="bottom" constant="15" id="IqD-ye-4v1"/>
+                <constraint firstItem="DF9-3b-yPX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="MpU-nn-gLV"/>
+                <constraint firstItem="gSn-f9-0Tq" firstAttribute="top" secondItem="DF9-3b-yPX" secondAttribute="bottom" constant="15" id="P3x-OL-gMY"/>
+                <constraint firstItem="i0E-WN-v3f" firstAttribute="top" secondItem="Oba-Pv-chl" secondAttribute="bottom" constant="15" id="PLJ-cl-9Pf"/>
+                <constraint firstAttribute="trailing" secondItem="Oba-Pv-chl" secondAttribute="trailing" constant="15" id="QyQ-9U-2Xo"/>
+                <constraint firstItem="Oba-Pv-chl" firstAttribute="top" secondItem="6aZ-gO-Aae" secondAttribute="bottom" constant="15" id="axO-zI-ION"/>
+                <constraint firstItem="vQH-EC-6Cn" firstAttribute="top" secondItem="gSn-f9-0Tq" secondAttribute="bottom" constant="15" id="dIK-I6-RUk"/>
+                <constraint firstItem="DF9-3b-yPX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="f0j-za-TOU"/>
+                <constraint firstItem="i0E-WN-v3f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="hYb-RC-C3R"/>
+                <constraint firstItem="vQH-EC-6Cn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="hyL-PW-Fhy"/>
+                <constraint firstItem="aky-OG-xJu" firstAttribute="top" secondItem="vQH-EC-6Cn" secondAttribute="bottom" constant="15" id="iKw-Vn-gw1"/>
+                <constraint firstItem="ew8-kv-7LD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="kGe-cj-zgC"/>
+                <constraint firstItem="Oba-Pv-chl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="ldN-ht-Umx"/>
+                <constraint firstItem="aky-OG-xJu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="nZg-e2-PhP"/>
+                <constraint firstItem="6aZ-gO-Aae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="pPq-Nk-UyB"/>
+                <constraint firstItem="ew8-kv-7LD" firstAttribute="top" secondItem="3RQ-wA-zMW" secondAttribute="bottom" constant="15" id="riG-DI-fgu"/>
+                <constraint firstItem="3RQ-wA-zMW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="whC-er-BQw"/>
+                <constraint firstItem="fkR-Kc-pBc" firstAttribute="top" secondItem="aky-OG-xJu" secondAttribute="bottom" constant="15" id="z1J-Bm-dG5"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RedButton" width="61" height="34"/>
+        <image name="stretch" width="502" height="221"/>
+    </resources>
+</document>

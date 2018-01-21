@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIWebViewViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEE-zc-4PI">
+                    <rect key="frame" x="10" y="70" width="62" height="30"/>
+                    <state key="normal" title="加载网页"/>
+                    <connections>
+                        <action selector="loadWebPage:" destination="-1" eventType="touchUpInside" id="hNv-9O-LlG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyW-gh-SzU">
+                    <rect key="frame" x="10" y="110" width="134" height="30"/>
+                    <state key="normal" title="加载本地pdf或word"/>
+                    <connections>
+                        <action selector="loadPdf:" destination="-1" eventType="touchUpInside" id="9WB-rH-lZF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGp-wd-6W1">
+                    <rect key="frame" x="10" y="150" width="149" height="30"/>
+                    <state key="normal" title="加载本地html与js交互"/>
+                    <connections>
+                        <action selector="loadJS:" destination="-1" eventType="touchUpInside" id="PlH-Rw-5wv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zGp-wd-6W1" firstAttribute="top" secondItem="NyW-gh-SzU" secondAttribute="bottom" constant="10" id="0Wm-yA-W94"/>
+                <constraint firstItem="NyW-gh-SzU" firstAttribute="top" secondItem="VEE-zc-4PI" secondAttribute="bottom" constant="10" id="4nE-3J-ewG"/>
+                <constraint firstItem="VEE-zc-4PI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="5De-7n-hIy"/>
+                <constraint firstItem="VEE-zc-4PI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="AGg-1T-CHe"/>
+                <constraint firstItem="NyW-gh-SzU" firstAttribute="leading" secondItem="VEE-zc-4PI" secondAttribute="leading" id="Sp0-y0-5D5"/>
+                <constraint firstItem="zGp-wd-6W1" firstAttribute="leading" secondItem="NyW-gh-SzU" secondAttribute="leading" id="u4e-Fq-CPB"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GCDDelayViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGZ-1g-Twc">
+                    <rect key="frame" x="10" y="70" width="31" height="30"/>
+                    <state key="normal" title="延时"/>
+                    <connections>
+                        <action selector="btnDelayClick:" destination="-1" eventType="touchUpInside" id="6tM-sv-84e"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDi-2u-uuh">
+                    <rect key="frame" x="10" y="110" width="77" height="30"/>
+                    <state key="normal" title="一次性执行"/>
+                    <connections>
+                        <action selector="btnOnceClick:" destination="-1" eventType="touchUpInside" id="fsh-FT-bPk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8w-q7-7ih">
+                    <rect key="frame" x="10" y="150" width="180" height="30"/>
+                    <state key="normal" title="gcd单例和互斥锁单例对比"/>
+                    <connections>
+                        <action selector="btnSingletonClick:" destination="-1" eventType="touchUpInside" id="XGO-Cd-4Yo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LGZ-1g-Twc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="LbW-B6-Xuu"/>
+                <constraint firstItem="k8w-q7-7ih" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Yf9-uM-fGs"/>
+                <constraint firstItem="XDi-2u-uuh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="g0N-PC-8Ry"/>
+                <constraint firstItem="k8w-q7-7ih" firstAttribute="top" secondItem="XDi-2u-uuh" secondAttribute="bottom" constant="10" id="nTg-oU-hBQ"/>
+                <constraint firstItem="XDi-2u-uuh" firstAttribute="top" secondItem="LGZ-1g-Twc" secondAttribute="bottom" constant="10" id="pZz-Xa-3oh"/>
+                <constraint firstItem="LGZ-1g-Twc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="t1Z-ue-16H"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

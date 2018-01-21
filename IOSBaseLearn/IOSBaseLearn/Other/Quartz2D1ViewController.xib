@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Quartz2D1ViewController">
+            <connections>
+                <outlet property="jiePingLabel" destination="YTZ-AH-pMZ" id="DvP-Ll-RtT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdz-kG-d1a" customClass="MyClipImageView">
+                    <rect key="frame" x="10" y="70" width="140" height="140"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="Vmr-ad-zew"/>
+                        <constraint firstAttribute="width" constant="140" id="xh4-WE-sJj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHl-ES-XuO" customClass="MyAnimView">
+                    <rect key="frame" x="23" y="233" width="322" height="374"/>
+                    <color key="backgroundColor" red="0.25882352939999997" green="0.52941176469999995" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLl-QB-1E4">
+                    <rect key="frame" x="170" y="106" width="31" height="30"/>
+                    <state key="normal" title="截屏"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="VkO-Qg-Z2N"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="截屏是否成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-AH-pMZ">
+                    <rect key="frame" x="170" y="146" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hLl-QB-1E4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="106" id="0ni-FF-cfV"/>
+                <constraint firstItem="oHl-ES-XuO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="3YG-dy-PeV"/>
+                <constraint firstItem="oHl-ES-XuO" firstAttribute="top" secondItem="mdz-kG-d1a" secondAttribute="bottom" constant="23" id="CNz-3G-lto"/>
+                <constraint firstItem="YTZ-AH-pMZ" firstAttribute="leading" secondItem="hLl-QB-1E4" secondAttribute="leading" id="K2p-9d-QUh"/>
+                <constraint firstAttribute="trailing" secondItem="oHl-ES-XuO" secondAttribute="trailing" constant="30" id="TQH-ro-A9T"/>
+                <constraint firstAttribute="bottom" secondItem="oHl-ES-XuO" secondAttribute="bottom" constant="60" id="aqh-pp-xQf"/>
+                <constraint firstItem="YTZ-AH-pMZ" firstAttribute="top" secondItem="hLl-QB-1E4" secondAttribute="bottom" constant="10" id="k53-Og-6qO"/>
+                <constraint firstItem="mdz-kG-d1a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="maw-rr-r2s"/>
+                <constraint firstItem="mdz-kG-d1a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rmd-wg-54z"/>
+                <constraint firstItem="hLl-QB-1E4" firstAttribute="leading" secondItem="mdz-kG-d1a" secondAttribute="trailing" constant="20" id="vp6-6s-2f4"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SizeClassViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="横屏的时候在左上角,竖屏的时候在右下角" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-zd-KkP">
+                    <rect key="frame" x="87.666666666666657" y="705" width="316.33333333333337" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6Q4-zd-KkP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="9ae-wV-qjL"/>
+                <constraint firstItem="6Q4-zd-KkP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="KQY-am-wJ3"/>
+                <constraint firstItem="6Q4-zd-KkP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="gn2-aQ-CBs"/>
+                <constraint firstAttribute="bottom" secondItem="6Q4-zd-KkP" secondAttribute="bottom" constant="10" id="gyC-in-dak"/>
+                <constraint firstAttribute="trailing" secondItem="6Q4-zd-KkP" secondAttribute="trailing" constant="10" id="oi4-rP-UfP">
+                    <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="6Q4-zd-KkP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="pIc-Vi-i7v"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9ae-wV-qjL"/>
+                    <exclude reference="KQY-am-wJ3"/>
+                    <exclude reference="gn2-aQ-CBs"/>
+                    <exclude reference="gyC-in-dak"/>
+                    <exclude reference="oi4-rP-UfP"/>
+                    <exclude reference="pIc-Vi-i7v"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="gyC-in-dak"/>
+                    <include reference="oi4-rP-UfP"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="6Q4-zd-KkP"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="gn2-aQ-CBs"/>
+                    <exclude reference="gyC-in-dak"/>
+                    <exclude reference="oi4-rP-UfP"/>
+                    <include reference="pIc-Vi-i7v"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="9ae-wV-qjL"/>
+                    <include reference="KQY-am-wJ3"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

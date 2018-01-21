@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageSlicingViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHL-kb-HJ9">
+                    <rect key="frame" x="15" y="70" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slicingBtn" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-RU-eSW">
+                    <rect key="frame" x="15" y="101" width="118" height="34"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拉长后" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TO-2f-M60">
+                    <rect key="frame" x="15" y="145" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slicingBtn" translatesAutoresizingMaskIntoConstraints="NO" id="g12-uz-gKf">
+                    <rect key="frame" x="15" y="176" width="330" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="WfX-wj-D3J"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageView可通过Show Slicing拉伸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpx-ki-Sdd">
+                    <rect key="frame" x="15" y="220" width="267" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slicingBtn1" translatesAutoresizingMaskIntoConstraints="NO" id="MgF-bi-tjR">
+                    <rect key="frame" x="15" y="251" width="330" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="330" id="10q-jn-cQd"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="1Yl-9O-aLc"/>
+                        <constraint firstAttribute="height" constant="34" id="gP4-NO-E4L"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzF-mp-9k6">
+                    <rect key="frame" x="15" y="326" width="330" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="ajE-L0-tl6"/>
+                        <constraint firstAttribute="width" constant="330" id="aqO-hm-rD6"/>
+                    </constraints>
+                    <state key="normal" title="Button" backgroundImage="slicingBtn"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Btn拉长后" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIT-U3-Zag">
+                    <rect key="frame" x="15" y="295" width="79" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Btn可通过Show Slicing拉伸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCJ-RC-kRm">
+                    <rect key="frame" x="15" y="370" width="210" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmc-2j-jd0">
+                    <rect key="frame" x="15" y="401" width="330" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="JUE-Z2-Lh4"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="aX9-UE-hPa"/>
+                        <constraint firstAttribute="width" constant="330" id="pxs-3U-iBH"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="rpA-2I-zFX"/>
+                    </constraints>
+                    <state key="normal" title="Button" backgroundImage="slicingBtn1"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MgF-bi-tjR" firstAttribute="top" secondItem="rpx-ki-Sdd" secondAttribute="bottom" constant="10" id="4F5-UG-PGD"/>
+                <constraint firstItem="bzF-mp-9k6" firstAttribute="top" secondItem="KIT-U3-Zag" secondAttribute="bottom" constant="10" id="6Yn-S5-oq1"/>
+                <constraint firstItem="bmc-2j-jd0" firstAttribute="top" secondItem="lCJ-RC-kRm" secondAttribute="bottom" constant="10" id="8dC-9l-Fwg"/>
+                <constraint firstItem="lCJ-RC-kRm" firstAttribute="top" secondItem="bzF-mp-9k6" secondAttribute="bottom" constant="10" id="98V-m1-YES"/>
+                <constraint firstItem="rpx-ki-Sdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="BRQ-oz-gM7"/>
+                <constraint firstItem="MgF-bi-tjR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="FsZ-7C-r42"/>
+                <constraint firstItem="bmc-2j-jd0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="I2G-Wy-DLo"/>
+                <constraint firstItem="iHL-kb-HJ9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="LNf-8H-rc1"/>
+                <constraint firstItem="lCJ-RC-kRm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="MCM-5a-NuB"/>
+                <constraint firstItem="6TO-2f-M60" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="UVv-Ae-w8w"/>
+                <constraint firstItem="6TO-2f-M60" firstAttribute="top" secondItem="zZc-RU-eSW" secondAttribute="bottom" constant="10" id="e2E-R3-llT"/>
+                <constraint firstItem="zZc-RU-eSW" firstAttribute="top" secondItem="iHL-kb-HJ9" secondAttribute="bottom" constant="10" id="gKf-6L-WBw"/>
+                <constraint firstItem="zZc-RU-eSW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="ges-po-Brv"/>
+                <constraint firstItem="iHL-kb-HJ9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="ghp-2n-gHt"/>
+                <constraint firstItem="KIT-U3-Zag" firstAttribute="top" secondItem="MgF-bi-tjR" secondAttribute="bottom" constant="10" id="i5r-XO-gtw"/>
+                <constraint firstItem="g12-uz-gKf" firstAttribute="top" secondItem="6TO-2f-M60" secondAttribute="bottom" constant="10" id="jcL-IQ-PH8"/>
+                <constraint firstItem="g12-uz-gKf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="ppy-AT-Qt0"/>
+                <constraint firstItem="rpx-ki-Sdd" firstAttribute="top" secondItem="g12-uz-gKf" secondAttribute="bottom" constant="10" id="qEW-e7-gdf"/>
+                <constraint firstItem="bzF-mp-9k6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="uzk-BD-OYl"/>
+                <constraint firstItem="KIT-U3-Zag" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="yXG-3t-CUz"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="slicingBtn" width="118" height="34"/>
+        <image name="slicingBtn1" width="34" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarBackgroundViewController</string>
+		<key>Title</key>
+		<string>设置导航栏的背景颜色</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBackgroundImageController</string>
+		<key>Title</key>
+		<string>设置导航栏的背景图</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarWithBackButtonController</string>
+		<key>Title</key>
+		<string>设置导航栏的返回按钮</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarHideLineController</string>
+		<key>Title</key>
+		<string>隐藏导航栏底部的线条</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarBottomLineColorController</string>
+		<key>Title</key>
+		<string>设置导航栏底部的线条的颜色</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarMoreButtonController</string>
+		<key>Title</key>
+		<string>在导航栏上添加多个按钮</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarAddSegmentController</string>
+		<key>Title</key>
+		<string>在导航栏上添加分段控件</string>
+	</dict>
+	<dict>
+		<key>ClassName</key>
+		<string>NavigationBarChangeBackgroundViewController</string>
+		<key>Title</key>
+		<string>更改背景色</string>
+	</dict>
+</array>
+</plist>

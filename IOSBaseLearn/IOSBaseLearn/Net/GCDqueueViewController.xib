@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GCDqueueViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1v-p8-0ZQ">
+                    <rect key="frame" x="10" y="70" width="123" height="30"/>
+                    <state key="normal" title="同步任务串行队列"/>
+                    <connections>
+                        <action selector="btnClick0:" destination="-1" eventType="touchUpInside" id="SJy-hq-lGH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJQ-Rt-PwU">
+                    <rect key="frame" x="10" y="110" width="123" height="30"/>
+                    <state key="normal" title="同步任务并发队列"/>
+                    <connections>
+                        <action selector="btnClick1:" destination="-1" eventType="touchUpInside" id="UNB-SF-RzA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX0-0P-9ly">
+                    <rect key="frame" x="10" y="150" width="123" height="30"/>
+                    <state key="normal" title="异步任务串行队列"/>
+                    <connections>
+                        <action selector="btnClick2:" destination="-1" eventType="touchUpInside" id="1HG-mi-b6M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOW-GC-shk">
+                    <rect key="frame" x="10" y="190" width="123" height="30"/>
+                    <state key="normal" title="异步任务并发队列"/>
+                    <connections>
+                        <action selector="btnClick3:" destination="-1" eventType="touchUpInside" id="mJ6-j7-JjD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1St-Ut-4vW">
+                    <rect key="frame" x="10" y="240" width="108" height="30"/>
+                    <state key="normal" title="异步执行主队列"/>
+                    <connections>
+                        <action selector="btnClick4:" destination="-1" eventType="touchUpInside" id="lxX-Hb-dKo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-Is-q0i">
+                    <rect key="frame" x="10" y="280" width="108" height="30"/>
+                    <state key="normal" title="同步执行主队列"/>
+                    <connections>
+                        <action selector="btnClick5:" destination="-1" eventType="touchUpInside" id="Sk8-Y2-cn6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1St-Ut-4vW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="1bo-Vt-Htx"/>
+                <constraint firstItem="NOW-GC-shk" firstAttribute="top" secondItem="PX0-0P-9ly" secondAttribute="bottom" constant="10" id="3JT-h9-e4x"/>
+                <constraint firstItem="RJQ-Rt-PwU" firstAttribute="top" secondItem="K1v-p8-0ZQ" secondAttribute="bottom" constant="10" id="3XE-ia-RzK"/>
+                <constraint firstItem="1St-Ut-4vW" firstAttribute="top" secondItem="NOW-GC-shk" secondAttribute="bottom" constant="20" id="7nT-tU-SHd"/>
+                <constraint firstItem="PX0-0P-9ly" firstAttribute="top" secondItem="RJQ-Rt-PwU" secondAttribute="bottom" constant="10" id="ZFX-6V-bGf"/>
+                <constraint firstItem="nLV-Is-q0i" firstAttribute="top" secondItem="1St-Ut-4vW" secondAttribute="bottom" constant="10" id="ZhT-DE-IIg"/>
+                <constraint firstItem="PX0-0P-9ly" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="g40-vJ-dOl"/>
+                <constraint firstItem="K1v-p8-0ZQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="gRJ-fz-WEx"/>
+                <constraint firstItem="NOW-GC-shk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="kHn-LF-dLE"/>
+                <constraint firstItem="K1v-p8-0ZQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="pAh-0C-Bdb"/>
+                <constraint firstItem="nLV-Is-q0i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rpp-cL-Nic"/>
+                <constraint firstItem="RJQ-Rt-PwU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="xiX-kE-4If"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
