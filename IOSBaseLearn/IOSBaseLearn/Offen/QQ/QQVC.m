@@ -93,6 +93,7 @@ static const CGFloat ratio = 0.8f;
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat yOffset=scrollView.contentOffset.y;//向上滑动，offset是增加的，向下滑动，offset是减少的。
+    NSLog(@"yOffset: %f", yOffset);
     if (yOffset<headHeight) {//当滑动到导航栏底部之前
         CGFloat colorAlpha=yOffset/headHeight;//0-1
         navBar.backgroundColor=[[UIColor whiteColor]colorWithAlphaComponent:colorAlpha];
