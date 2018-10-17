@@ -105,6 +105,13 @@
 		855D6B091F57CF62009BAA07 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D6B081F57CF62009BAA07 /* NSArray+Log.m */; };
 		855D6B0D1F59370D009BAA07 /* LocalAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855D6B0B1F59370D009BAA07 /* LocalAuthenticationViewController.m */; };
 		855D6B0E1F59370D009BAA07 /* LocalAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 855D6B0C1F59370D009BAA07 /* LocalAuthenticationViewController.xib */; };
+		8561A5E821770BD700879EB2 /* QQVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8561A5E721770BD700879EB2 /* QQVC.m */; };
+		8561A5EB21770C5300879EB2 /* EOCCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8561A5EA21770C5300879EB2 /* EOCCustomNavBar.m */; };
+		8561A5F021770D1300879EB2 /* Mail-click.png in Resources */ = {isa = PBXBuildFile; fileRef = 8561A5EE21770D1300879EB2 /* Mail-click.png */; };
+		8561A5F121770D1300879EB2 /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 8561A5EF21770D1300879EB2 /* Mail.png */; };
+		8561A5F421770D3600879EB2 /* Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8561A5F221770D3600879EB2 /* Setting.png */; };
+		8561A5F521770D3600879EB2 /* Setting-click.png in Resources */ = {isa = PBXBuildFile; fileRef = 8561A5F321770D3600879EB2 /* Setting-click.png */; };
+		8561A5F721770F1B00879EB2 /* bg-mine.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8561A5F621770F1B00879EB2 /* bg-mine.jpeg */; };
 		857211FD1F4ABC4E009F5E33 /* ImageCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 857211FB1F4ABC4E009F5E33 /* ImageCacheViewController.m */; };
 		857211FE1F4ABC4E009F5E33 /* ImageCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857211FC1F4ABC4E009F5E33 /* ImageCacheViewController.xib */; };
 		8584B4551F3AEB0100F6FCC8 /* Block1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8584B4541F3AEB0100F6FCC8 /* Block1ViewController.m */; };
@@ -376,6 +383,15 @@
 		855D6B0A1F59370D009BAA07 /* LocalAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAuthenticationViewController.h; sourceTree = "<group>"; };
 		855D6B0B1F59370D009BAA07 /* LocalAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAuthenticationViewController.m; sourceTree = "<group>"; };
 		855D6B0C1F59370D009BAA07 /* LocalAuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalAuthenticationViewController.xib; sourceTree = "<group>"; };
+		8561A5E621770BD700879EB2 /* QQVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQVC.h; sourceTree = "<group>"; };
+		8561A5E721770BD700879EB2 /* QQVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQVC.m; sourceTree = "<group>"; };
+		8561A5E921770C5300879EB2 /* EOCCustomNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCCustomNavBar.h; sourceTree = "<group>"; };
+		8561A5EA21770C5300879EB2 /* EOCCustomNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCCustomNavBar.m; sourceTree = "<group>"; };
+		8561A5EE21770D1300879EB2 /* Mail-click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail-click.png"; sourceTree = "<group>"; };
+		8561A5EF21770D1300879EB2 /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mail.png; sourceTree = "<group>"; };
+		8561A5F221770D3600879EB2 /* Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setting.png; sourceTree = "<group>"; };
+		8561A5F321770D3600879EB2 /* Setting-click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Setting-click.png"; sourceTree = "<group>"; };
+		8561A5F621770F1B00879EB2 /* bg-mine.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-mine.jpeg"; sourceTree = "<group>"; };
 		857211FA1F4ABC4E009F5E33 /* ImageCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCacheViewController.h; sourceTree = "<group>"; };
 		857211FB1F4ABC4E009F5E33 /* ImageCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCacheViewController.m; sourceTree = "<group>"; };
 		857211FC1F4ABC4E009F5E33 /* ImageCacheViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCacheViewController.xib; sourceTree = "<group>"; };
@@ -622,6 +638,7 @@
 				409BB8E91FFE6056006372B9 /* CustomView.h */,
 				409BB8EA1FFE6056006372B9 /* CustomView.m */,
 				409BB8EC1FFE608C006372B9 /* CustomView.xib */,
+				8561A5E021770B9A00879EB2 /* QQ */,
 			);
 			path = Offen;
 			sourceTree = "<group>";
@@ -805,6 +822,22 @@
 				855D6B081F57CF62009BAA07 /* NSArray+Log.m */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		8561A5E021770B9A00879EB2 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				8561A5E621770BD700879EB2 /* QQVC.h */,
+				8561A5E721770BD700879EB2 /* QQVC.m */,
+				8561A5E921770C5300879EB2 /* EOCCustomNavBar.h */,
+				8561A5EA21770C5300879EB2 /* EOCCustomNavBar.m */,
+				8561A5F621770F1B00879EB2 /* bg-mine.jpeg */,
+				8561A5EE21770D1300879EB2 /* Mail-click.png */,
+				8561A5EF21770D1300879EB2 /* Mail.png */,
+				8561A5F321770D3600879EB2 /* Setting-click.png */,
+				8561A5F221770D3600879EB2 /* Setting.png */,
+			);
+			path = QQ;
 			sourceTree = "<group>";
 		};
 		85A0B10A1F25E19100B9BB38 /* Tools */ = {
@@ -1125,6 +1158,7 @@
 				85A0B1181F29FA4400B9BB38 /* NSKeyedArchiverViewController.xib in Resources */,
 				85DD2D341F2098AB00ED4D0A /* NavigationViewController.xib in Resources */,
 				85A0B1101F25EB5500B9BB38 /* UIApplicationViewController.xib in Resources */,
+				8561A5F121770D1300879EB2 /* Mail.png in Resources */,
 				8597EBCF1FBEB411000B589D /* UIImageViewAnimViewController.xib in Resources */,
 				85CB9AF71F31A81800456FE3 /* CAAnimGroupViewController.xib in Resources */,
 				85E4102F1F60EF6D007DBDB9 /* webview.pdf in Resources */,
@@ -1148,6 +1182,7 @@
 				853DAEC71F0F926400FA779B /* guide01.jpg in Resources */,
 				8525CA381F18C62E00974250 /* 001.mp3 in Resources */,
 				400F52141F491D1A009D1EC6 /* ImageAsyncViewController.xib in Resources */,
+				8561A5F521770D3600879EB2 /* Setting-click.png in Resources */,
 				85FD212A1F552A7500495C70 /* ImageSDViewController.xib in Resources */,
 				85D6FF991F61096F00A29246 /* UIWebViewJSViewController.xib in Resources */,
 				850649581F4460AD000D027A /* GCDqueueViewController.xib in Resources */,
@@ -1156,11 +1191,13 @@
 				85DD2D711F21EDB300ED4D0A /* AutoLayoutXibViewController.xib in Resources */,
 				401691D71FC322DF00C6AADD /* NavigationBarDataSource.plist in Resources */,
 				858D02491F30236D00A60EF3 /* CALayerViewController.xib in Resources */,
+				8561A5F421770D3600879EB2 /* Setting.png in Resources */,
 				400F52021F40AA60009D1EC6 /* UIDynamicViewController.xib in Resources */,
 				400F520A1F47DF2A009D1EC6 /* ImageSyncViewController.xib in Resources */,
 				8584B45A1F3AEB1800F6FCC8 /* Block2ViewController.xib in Resources */,
 				85DD2D421F2098AB00ED4D0A /* UIAlertAndActivityViewController.xib in Resources */,
 				853DAEC91F0F926400FA779B /* guide03.jpg in Resources */,
+				8561A5F721770F1B00879EB2 /* bg-mine.jpeg in Resources */,
 				409BB8ED1FFE608C006372B9 /* CustomView.xib in Resources */,
 				409BB8F6200120EF006372B9 /* TableViewDuo0Cell.xib in Resources */,
 				850649651F459E83000D027A /* GCDGroupViewController.xib in Resources */,
@@ -1169,6 +1206,7 @@
 				4067B9CB1FC959B6008DD7D1 /* TableViewCellHeight1ViewController.xib in Resources */,
 				855D6B051F57B2BB009BAA07 /* NSURLConnectParmViewController.xib in Resources */,
 				8599EAC41F41B65100DA5DD2 /* SizeClassViewController.xib in Resources */,
+				8561A5F021770D1300879EB2 /* Mail-click.png in Resources */,
 				858D02391F2EEA0700A60EF3 /* Quartz2D0ViewController.xib in Resources */,
 				851201FB1F32F6160021981B /* ImageStretchingViewController.xib in Resources */,
 				400F521E1F49BE5D009D1EC6 /* ImageRepeatDownloadViewController.xib in Resources */,
@@ -1362,6 +1400,7 @@
 				401691D41FC321BD00C6AADD /* UINavigationBarViewController.m in Sources */,
 				858D024D1F30246E00A60EF3 /* CALayer0ViewController.m in Sources */,
 				409BB8FA20012157006372B9 /* TableViewDuo1Cell.m in Sources */,
+				8561A5EB21770C5300879EB2 /* EOCCustomNavBar.m in Sources */,
 				8556EB001F53D6EF00E8D97C /* CustomOperation.m in Sources */,
 				850649531F443D6D000D027A /* ImageGCDViewController.m in Sources */,
 				85DD2D511F2098AB00ED4D0A /* UITextViewViewController.m in Sources */,
@@ -1372,6 +1411,7 @@
 				85DD2D4E1F2098AB00ED4D0A /* UISwitchViewController.m in Sources */,
 				850649411F42D0AE000D027A /* NSOperationViewController.m in Sources */,
 				851201F61F31B6300021981B /* CATransitionViewController.m in Sources */,
+				8561A5E821770BD700879EB2 /* QQVC.m in Sources */,
 				85DD2D2F1F2098AB00ED4D0A /* AVPlayerViewViewController.m in Sources */,
 				85DD2D3A1F2098AB00ED4D0A /* TabBar1ViewController.m in Sources */,
 				850649641F459E83000D027A /* GCDGroupViewController.m in Sources */,

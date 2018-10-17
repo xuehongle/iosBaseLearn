@@ -8,6 +8,7 @@
 
 #import "OffenViewController.h"
 #import "CustomViewVC.h"
+#import "QQVC.h"
 
 @interface OffenViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -24,7 +25,7 @@
     self.navigationItem.title = @"常用";
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    _arr = @[@"跳转AppStroe", @"自定义View"];
+    _arr = @[@"跳转AppStroe", @"自定义View", @"QQ空间之打造个性化可拉伸头部控件"];
 }
 
 //pragma: delegate
@@ -46,6 +47,9 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/zhihuinanzhan/id1195757626?mt=8"]];
     } else if ([self.arr[indexPath.row] isEqualToString:@"自定义View"]) {
         CustomViewVC * vc = [[CustomViewVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([self.arr[indexPath.row] isEqualToString:@"QQ空间之打造个性化可拉伸头部控件"]) {
+        QQVC * vc = [[QQVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
