@@ -128,6 +128,10 @@
 		858D024D1F30246E00A60EF3 /* CALayer0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858D024B1F30246E00A60EF3 /* CALayer0ViewController.m */; };
 		858D024E1F30246E00A60EF3 /* CALayer0ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858D024C1F30246E00A60EF3 /* CALayer0ViewController.xib */; };
 		858D02511F30590A00A60EF3 /* CALayerAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858D02501F30590A00A60EF3 /* CALayerAnimViewController.m */; };
+		8595CC9622685A3800E57678 /* TableViewCellSameHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595CC9522685A3800E57678 /* TableViewCellSameHeightVC.m */; };
+		8595CC9B22685BAA00E57678 /* XMGTg.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595CC9822685BA900E57678 /* XMGTg.m */; };
+		8595CC9C22685BAA00E57678 /* XMGTgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8595CC9A22685BAA00E57678 /* XMGTgCell.m */; };
+		8595CC9E22685C7000E57678 /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8595CC9D22685C7000E57678 /* tgs.plist */; };
 		8597EBCE1FBEB411000B589D /* UIImageViewAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8597EBCC1FBEB411000B589D /* UIImageViewAnimViewController.m */; };
 		8597EBCF1FBEB411000B589D /* UIImageViewAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8597EBCD1FBEB411000B589D /* UIImageViewAnimViewController.xib */; };
 		8599EAC31F41B65100DA5DD2 /* SizeClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8599EAC11F41B65100DA5DD2 /* SizeClassViewController.m */; };
@@ -418,6 +422,13 @@
 		858D024C1F30246E00A60EF3 /* CALayer0ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALayer0ViewController.xib; sourceTree = "<group>"; };
 		858D024F1F30590A00A60EF3 /* CALayerAnimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerAnimViewController.h; sourceTree = "<group>"; };
 		858D02501F30590A00A60EF3 /* CALayerAnimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerAnimViewController.m; sourceTree = "<group>"; };
+		8595CC9422685A3800E57678 /* TableViewCellSameHeightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellSameHeightVC.h; sourceTree = "<group>"; };
+		8595CC9522685A3800E57678 /* TableViewCellSameHeightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellSameHeightVC.m; sourceTree = "<group>"; };
+		8595CC9722685BA900E57678 /* XMGTg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTg.h; sourceTree = "<group>"; };
+		8595CC9822685BA900E57678 /* XMGTg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTg.m; sourceTree = "<group>"; };
+		8595CC9922685BA900E57678 /* XMGTgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTgCell.h; sourceTree = "<group>"; };
+		8595CC9A22685BAA00E57678 /* XMGTgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTgCell.m; sourceTree = "<group>"; };
+		8595CC9D22685C7000E57678 /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
 		8597EBCB1FBEB411000B589D /* UIImageViewAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewAnimViewController.h; sourceTree = "<group>"; };
 		8597EBCC1FBEB411000B589D /* UIImageViewAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewAnimViewController.m; sourceTree = "<group>"; };
 		8597EBCD1FBEB411000B589D /* UIImageViewAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImageViewAnimViewController.xib; sourceTree = "<group>"; };
@@ -802,6 +813,7 @@
 		853DAE661F0CE90300FA779B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8595CC9D22685C7000E57678 /* tgs.plist */,
 				40A31CC41FF9087800275035 /* Demo-Prefix.pch */,
 				853DAEC41F0F926400FA779B /* guide01.jpg */,
 				853DAEC51F0F926400FA779B /* guide02.jpg */,
@@ -884,6 +896,12 @@
 				85DD2CF81F2098AB00ED4D0A /* TableViewController.h */,
 				85DD2CF91F2098AB00ED4D0A /* TableViewController.m */,
 				85DD2CFA1F2098AB00ED4D0A /* TableViewController.xib */,
+				8595CC9422685A3800E57678 /* TableViewCellSameHeightVC.h */,
+				8595CC9522685A3800E57678 /* TableViewCellSameHeightVC.m */,
+				8595CC9722685BA900E57678 /* XMGTg.h */,
+				8595CC9822685BA900E57678 /* XMGTg.m */,
+				8595CC9922685BA900E57678 /* XMGTgCell.h */,
+				8595CC9A22685BAA00E57678 /* XMGTgCell.m */,
 				409BB8FC20012532006372B9 /* TableViewHeaderVC.h */,
 				409BB8FD20012532006372B9 /* TableViewHeaderVC.m */,
 				409BB8EF20011C32006372B9 /* TableViewDuoCellVC.h */,
@@ -1101,8 +1119,6 @@
 				853DAE5F1F0CE90300FA779B /* Sources */,
 				853DAE601F0CE90300FA779B /* Frameworks */,
 				853DAE611F0CE90300FA779B /* Resources */,
-				A56A5948D68E0F5F4C80DB12 /* [CP] Embed Pods Frameworks */,
-				FC56D461D282F8D32FD0526F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1213,6 +1229,7 @@
 				85DD2D791F22082700ED4D0A /* AutoLayoutAnimateViewController.xib in Resources */,
 				85CB9AED1F31755F00456FE3 /* CAAnimBaseViewController.xib in Resources */,
 				853DAE881F0E0DCE00FA779B /* ViewController.xib in Resources */,
+				8595CC9E22685C7000E57678 /* tgs.plist in Resources */,
 				8556EAFD1F53C62700E8D97C /* NSOperation3ViewController.xib in Resources */,
 				85A0B1291F2B367700B9BB38 /* Quartz2DViewController.xib in Resources */,
 				855D6AFC1F554FD9009BAA07 /* ImageCategoryViewController.xib in Resources */,
@@ -1225,21 +1242,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A56A5948D68E0F5F4C80DB12 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSBaseLearn/Pods-IOSBaseLearn-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EA1B7EF0D73DCB811BE61ECC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1256,21 +1258,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC56D461D282F8D32FD0526F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSBaseLearn/Pods-IOSBaseLearn-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1349,6 +1336,7 @@
 				4067B9CF1FC95D1B008DD7D1 /* MyTableViewCell.m in Sources */,
 				85DD2D4A1F2098AB00ED4D0A /* UIScrollDelegateViewController.m in Sources */,
 				401691EC1FC327A700C6AADD /* NavigationBarBottomLineColorController.m in Sources */,
+				8595CC9622685A3800E57678 /* TableViewCellSameHeightVC.m in Sources */,
 				85A0B11B1F29FAE500B9BB38 /* PersonBean.m in Sources */,
 				400F52051F43B395009D1EC6 /* NSThreadPropertyViewController.m in Sources */,
 				858D02511F30590A00A60EF3 /* CALayerAnimViewController.m in Sources */,
@@ -1356,6 +1344,7 @@
 				85DD2D691F20994D00ED4D0A /* NSUserDefaultViewController.m in Sources */,
 				401691F01FC327A700C6AADD /* NavigationBarWithBackButtonController.m in Sources */,
 				851201FE1F3302230021981B /* BaseNavigationViewController.m in Sources */,
+				8595CC9C22685BAA00E57678 /* XMGTgCell.m in Sources */,
 				85DD2D781F22082700ED4D0A /* AutoLayoutAnimateViewController.m in Sources */,
 				8599EAC71F42A4C900DA5DD2 /* NetViewController.m in Sources */,
 				409BB8EB1FFE6056006372B9 /* CustomView.m in Sources */,
@@ -1418,6 +1407,7 @@
 				851201F31F31B5F90021981B /* UIViewAnimationViewController.m in Sources */,
 				8584B4551F3AEB0100F6FCC8 /* Block1ViewController.m in Sources */,
 				85DD2D441F2098AB00ED4D0A /* UICollectionViewViewController.m in Sources */,
+				8595CC9B22685BAA00E57678 /* XMGTg.m in Sources */,
 				85E410291F60E944007DBDB9 /* UIWebViewViewController.m in Sources */,
 				8506495C1F458273000D027A /* GCDDelayViewController.m in Sources */,
 				400F52091F47DF2A009D1EC6 /* ImageSyncViewController.m in Sources */,

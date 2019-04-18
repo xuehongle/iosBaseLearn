@@ -13,6 +13,7 @@
 #import "TableViewCellHeight1ViewController.h"
 #import "TableViewDuoCellVC.h"
 #import "TableViewHeaderVC.h"
+#import "TableViewCellSameHeightVC.h"
 
 @interface TableViewController ()
 
@@ -51,6 +52,10 @@
 }
 - (IBAction)gotoHeaderView:(id)sender {
     UIViewController * vc = [[TableViewHeaderVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)gotoCellSameHeight:(id)sender {
+    UIViewController * vc = [[TableViewCellSameHeightVC alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
